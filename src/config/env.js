@@ -36,8 +36,11 @@ function validateEnv() {
   ];
 
   if (!process.env.NODE_ENV) {
-    process.env.NODE_ENV = "development";
-  }
+  process.env.NODE_ENV =
+    process.env.NODE_ENV === "production"
+      ? "production"
+      : "development";
+}
 
   if (!allowedEnvironments.includes(process.env.NODE_ENV)) {
     throw new Error("NODE_ENV must be development, production, or test");

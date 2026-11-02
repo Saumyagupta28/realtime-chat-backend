@@ -1,16 +1,27 @@
 {
   "name": "realtime-chat-backend",
   "version": "1.0.0",
+  "description": "A real-time chat backend built with Node.js, Express, MongoDB and WebSockets.",
   "main": "src/server.js",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "test": "jest --runInBand"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "websocket",
+    "real-time-chat",
+    "backend"
+  ],
+  "author": "Saumyagupta28",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "dotenv": "^18.0.9",
